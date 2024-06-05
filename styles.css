@@ -63,7 +63,7 @@
     }
 
     #line {
-        height: 1px;
+        height: 0.5px;
         width: 100%;
         margin-top: 6px;
         margin-bottom: 4px;
@@ -88,6 +88,24 @@
         margin-left: -30px;
     }
 
+    .button {
+        border-radius: 5px;
+        margin-top: 20px;
+        height: 2.4em;
+        width: 10em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        outline: none;
+        border: none;
+    }
+
+    #all_buttons {
+        margin-top: 25px;
+        width: 330px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
@@ -96,6 +114,8 @@
     .labels h5 {
         position: absolute;
         display: none;
+        width: 0px;
+        height: 0px;
     }
 
     .h2_bar h2 {
@@ -111,11 +131,34 @@
         border: 1px solid black;
     }
 
+
 }
 
 @media (min-width: 1300px) {
     .h2_bar h2 {
         position: absolute;
+    }
+    #footer_div {
+        margin-top: 15px;
+    }
+
+    .button {
+        border-radius: 5px;
+        margin-top: 20px;
+        height: 3em;
+        width: 10em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        outline: none;
+        border: none;
+    }
+
+    #all_buttons {
+        margin-top: 25px;
+        width: 400px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -218,16 +261,6 @@ a:last-child {
     box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgb(0 0 0 / 18%);
 }
 
-.button {
-    border-radius: 5px;
-    margin-top: 20px;
-    height: 3em;
-    width: 10em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    outline: none;
-    border: none;
-}
 
 .button:hover {
     border: 1px solid black;
@@ -462,7 +495,7 @@ footer {
     background-color: #adacac71;
     width: 100%;
     padding-top: 08px;
-    margin-top: 400px;
+    margin-top: 350px;
     border-radius: 10px;
 }
 
@@ -535,4 +568,5 @@ footer hr {
     margin-left: 46px;
     margin-top: 10px;
 }
+
 

@@ -11,7 +11,7 @@
         <a href="./index.html" class="sum_link">Back to Google search</a>
     </div>
     <div class="body">
-        <div class="google">
+        <div class="google" onclick="window.location.href = './index.html'">
             <div class="g">G</div>
             <div class="o1">o</div>
             <div class="o">o</div>
@@ -32,7 +32,10 @@
             </label>
             <input type="hidden" name="sclient" value="img">
             <input type="hidden" name="udm" value="2">
-            <input class="button" type="submit" value="Google image search"/>
+            <div id="all_buttons">
+                <input class="button" type="submit" value="Google image search"/>
+                <button class="button">I'm Feeling Lucky</button>
+            </div> 
         </form>
     </div>
     <footer class="abs_footer">

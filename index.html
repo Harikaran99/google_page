@@ -12,7 +12,7 @@
         <div class="vl"></div>
         <a href="./google_advanced_search.html" class="sum_link">Google advanced search</a>
     </div>
-    <div class="body">
+    <div class="body" onclick="window.location.href = './index.html'">
         <div class="google">
             <div class="g">G</div>
             <div class="o1">o</div>
@@ -25,8 +25,10 @@
             <label for="search">
                 <input class="search" type="text" name="q"/>
             </label>
-        
-            <input class="button" type="submit" value="Google search"/>
+            <div id="all_buttons">
+                <input class="button" type="submit" value="Google image search"/>
+                <button class="button">I'm Feeling Lucky</button>
+            </div> 
         </form>
     </div>
     <footer class="abs_footer">
